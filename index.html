@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./img/Rd088283ed73e9655614a212df9529c15.png">
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="./css/mine.css">
+  <title>Interior Design</title>
+</head>
+
+<body>
+  <!-- <div id="home"><a href="">!</a></div> -->
+  <!-- side nav bar -->
+  <nav class="side" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="closetop" style="width:100%;font-size:22px">Close Menu</a>
+    <h3><b>Company <br> Name</b></h3>
+    <div class="bar-block">
+      <a href="#home">Home</a>
+      <a href="#show">Showcase</a>
+      <a href="#ser">Services</a>
+      <a href="#des">Designers</a>
+      <a href="#pac">Packages</a>
+      <a href="#con">Contact</a>
+    </div>
+  </nav>
+  <!-- Top nav bar -->
+  <nav class="topnav">
+    <a href="javascript:void(0)" onclick="w3_open()">☰</a>
+    <h3><b>Company Name</b></h3>
+  </nav>
+
+  <div class="modal fade" id="kitchenconcrete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+            style="float:right"></button>
+          <!-- Ne stavljati style atribute za css -->
+          <img src="./img/kitchenconcrete.jpg" alt="" style="width: 100%;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="livingroom" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+            style="float:right"></button>
+          <img src="./img/livingroom.jpg" alt="" style="width: 100%;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="diningroom" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+            style="float:right"></button>
+          <img src="./img/diningroom.jpg" alt="" style="width: 100%;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="atrium" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+            style="float:right"></button>
+          <img src="./img/atrium.jpg" alt="" style="width: 100%;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="bedroom" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+            style="float:right"></button>
+          <img src="./img/bedroom.jpg" alt="" style="width: 100%;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="livingroom2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+            style="float:right"></button>
+          <img src="./img/livingroom2.jpg" alt="" style="width: 100%;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- content -->
+  <div class="mine-content">
+    <div class="mine-container">
+      <h1 id="show"><b>Interior Design</b></h1>
+      <h2><b>Showcase.</b></h2>
+      <hr>
+    </div>
+    <div data-aos="zoom-in-up" class="image">
+      <div class="half">
+        <img src="./img/kitchenconcrete.jpg" alt="kitchen" type="button" data-bs-toggle="modal"
+          data-bs-target="#kitchenconcrete" style="width: 100%; margin: 5px 0;">
+        <img src="./img/livingroom.jpg" alt="livingroom" type="button" data-bs-toggle="modal"
+          data-bs-target="#livingroom" style="width: 100%; margin: 5px 0;">
+        <img src="./img/diningroom.jpg" alt="diningroom" type="button" data-bs-toggle="modal"
+          data-bs-target="#diningroom" style="width: 100%; margin: 5px 0;">
+      </div>
+      <div class="half">
+        <img src="./img/atrium.jpg" alt="atrium" type="button" data-bs-toggle="modal" data-bs-target="#atrium"
+          style="width: 100%; margin: 5px 0;">
+        <img src="./img/bedroom.jpg" alt="bedroom" type="button" data-bs-toggle="modal" data-bs-target="#bedroom"
+          style="width: 100%; margin: 5px 0;">
+        <img src="./img/livingroom2.jpg" alt="livingroom2" type="button" data-bs-toggle="modal"
+          data-bs-target="#livingroom2" style="width: 100%; margin: 5px 0;">
+      </div>
+    </div>
+    <div data-aos="zoom-in-down" class="mine-container" id="ser">
+      <h2><b>Services.</b></h2>
+      <hr>
+      <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
+      <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+        sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat</p>
+    </div>
+
+    <!-- designers img -->
+    <div data-aos="zoom-in-up" class="mine-container" id="des">
+      <h2><b>Designers.</b></h2>
+      <hr>
+      <p>The best team in the world.</p>
+      <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et quis nostrud exercitation
+        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p><b>Our designers are thoughtfully chosen:</b></p>
+      <div class="card-group">
+        <div class="card">
+          <img src="./img/team2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title">John Doe</h3>
+            <p class="card-text"><small class="text-muted">CEO & Founder</small></p>
+            <p class="card-text">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+              elementum.</p>
+
+          </div>
+        </div>
+        <div class="card">
+          <img src="./img/team1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title">Jane Doe</h3>
+            <p class="card-text"><small class="text-muted">Designer</small></p>
+            <p class="card-text">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+              elementum.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./img/team3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title">Mike Ross</h3>
+            <p class="card-text">per room</p>
+            <p class="card-text">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+              elementum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- price card -->
+    <div data-aos="zoom-in-down" class="mine-container" id="pac">
+      <h2><b>Packages.</b></h2>
+      <hr>
+      <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure</p>
+      <div class="selcard">
+        <ul class="list-group text-center sell">
+          <li class="list-group-item firstgr">Basic</li>
+          <li class="list-group-item">Floorplanningt</li>
+          <li class="list-group-item">10 hours support</li>
+          <li class="list-group-item">Photography</li>
+          <li class="list-group-item">20% furniture discount</li>
+          <li class="list-group-item">Good deals</li>
+          <li class="list-group-item">
+            <h2>$ 199</h2><br> <small class="text-muted">per room</small>
+          </li>
+          <li class="list-group-item"><button class="buttonw">Sing Up</button></li>
+        </ul>
+        <ul class="list-group text-center sell">
+          <li class="list-group-item firstre">Pro</li>
+          <li class="list-group-item">Floorplanningt</li>
+          <li class="list-group-item">50 hours support</li>
+          <li class="list-group-item">Photography</li>
+          <li class="list-group-item">50% furniture discount</li>
+          <li class="list-group-item">GREAT deals</li>
+          <li class="list-group-item">
+            <h2>$ 249</h2><br> <small class="text-muted">per room</small>
+          </li>
+          <li class="list-group-item"><button class="buttonr">Sing Up</button></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- contact form -->
+    <div data-aos="zoom-in-up" class="mine-container" id="con">
+      <h2><b>Contact.</b></h2>
+      <hr>
+      <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new
+        people!</p>
+      <form action="">
+        <div class="form">
+          <label for="">Name</label>
+          <input type="text" name="name">
+        </div>
+        <div class="form">
+          <label for="">Email</label>
+          <input type="text" name="email">
+        </div>
+        <div class="form">
+          <label for="">Mesage</label>
+          <input type="text" name="message">
+        </div>
+        <button type="submit" class="bform">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Black overlay -->
+
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer;" title="close side menu"
+    id="myOverlay"></div>
+
+  <footer>
+    <p>By Luka in january 2021</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 900
+    });
+
+    // This code copyed by w3schools.com
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+  </script>
+</body>
+
+</html>

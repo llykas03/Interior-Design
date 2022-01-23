@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    margin: 10px, 0;
+}
+.side {
+    z-index: 3;
+    width: 300px;
+    font-weight: bold;
+    background-color: #f44336;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    padding: 8px 16px;
+}
+.side .bar-block a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    padding: 8px 16px;
+    white-space: normal;
+    font-weight: bold;
+    font-size: 18px;
+}
+.side .bar-block a:hover {
+    color: black;
+    background-color: #f1f1f1;
+}
+.side h3 {
+    margin: 20px 0;
+    padding: 64px 16px;
+    color: white;
+    font-weight: 350;
+}
+.topnav {
+    display: flex;
+    padding: 8px 16px;
+    font-size: 24px;
+    color: white;
+    background-color: #f44336;
+    display: none;
+}
+.topnav a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+}
+.topnav h3 {
+    padding: 8px 0;
+    font-weight: 300;
+}
+.closetop {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    padding: 8px 32px;
+    display: none;
+}
+.w3-overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+.modal-content {
+        min-width: 900px;
+        /* height: 620px; */
+    background-color: gainsboro;
+}
+/* .modal-body {
+    width: 700px;
+    height: 700px;
+} */
+.mine-content {
+    margin-left: 340px;
+    margin-right: 40px;
+}
+.mine-container {
+    margin-top: 80px;
+    padding: 0 16px;
+}
+h1 {
+    font-size: 64px;
+    font-weight: 350;
+}
+h2 {
+    color: #f44336;
+    font-size: 48px;
+    font-weight: 350;
+}
+hr {
+    margin: 20px 0;
+    border: 5px solid red;
+    width: 60px;
+    border-radius: 4px;
+    opacity: 1;
+
+}
+.image {
+    display: flex;
+    padding: 0 8px;
+}
+.half {
+    width: 50%;
+    padding: 0 8px;
+}
+img {
+    opacity: 0.8;
+}
+img:hover {
+    opacity: 1;
+}
+.card {
+    border: none;
+    padding: 0 8px;
+}
+.card img {
+    opacity: 1;
+    filter: grayscale(75%);
+}
+.modal-body img {
+    padding-top: 10px;
+    opacity: 1;
+}
+.card-body {
+    background-color: #f1f1f1;
+}
+.selcard {
+    display: flex;
+}
+.list-group {
+    width: 50%;
+    display: flex;
+    padding: 0 8px;
+}
+.list-group-item {
+    padding: 16px;
+    background-color: #f1f1f1;
+}
+.firstgr {
+    padding: 32px 16px;
+    background-color: #616161;
+    color: white;
+    font-size: 24px;
+}
+.firstre {
+    padding: 32px 16px;
+    background-color: #f44336;
+    color: white;
+    font-size: 24px;
+}
+.buttonw {
+    border: none;
+    background-color: white;
+    color: black;
+    padding: 12px 24px;
+
+}
+.buttonr {
+    border: none;
+    background-color: #f44336;
+    color: white;
+    padding: 12px 24px;
+}
+button:hover {
+    background-color: black;
+    color: white;
+}
+.form {
+    margin: 16px 0;
+}
+label {
+    display: block;
+}
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+.bform {
+    width: 100%;
+    border: none;
+    background-color: #f44336;
+    color: white;
+    padding: 12px 24px;
+}
+footer {
+    width: 100%;
+    margin-top: 80px;
+    background-color: #f1f1f1;
+    padding: 58px 58px;
+    width: 100%;
+    
+
+   
+}
+footer p {
+    float: right;
+}
+@media (max-width: 992px){
+    .side {
+        display: none;
+    }
+    .topnav {
+        display: flex;
+    }
+    .closetop {
+        display: block;
+    }
+    .mine-content {
+        margin: 0px;
+    }
+}
+@media (max-width: 600px) {
+    .image {
+        display: block;
+    }
+    .half {
+        width: 100%;
+    }
+    .card-group {
+        display: block;
+    }
+    .card {
+        margin-bottom: 16px;
+    }
+    .selcard {
+        display: block;
+    }
+    .sell {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+        
+}
+
+/* Modal media (Responsive) */
+@media (min-width: 920px) {
+    .modal-dialog {
+        max-width: 900px;
+    }
+}
+@media (max-width: 920px) {
+    .modal-content {
+    min-width: 500px;
+    margin-top: 200px;
+    }
+}
+@media (max-width: 500px) {
+    .modal-content {
+    min-width: 400px;
+    margin-top: 250px;
+    }
+}
+@media (max-width: 400px) {
+    .modal-content {
+    min-width: 350px;
+    margin-top: 300px;
+    }
+}
+@media (max-width: 350px) {
+    .modal-content {
+    min-width: 300px;
+    margin-top: 350px;
+    }
+}
